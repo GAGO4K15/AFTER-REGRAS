@@ -286,6 +286,35 @@ nav ul li a:focus {
     outline: 2px solid #ff6600;
     outline-offset: 2px;
 }
+
+/* Seção de Regras */
+.discord-rules {
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.discord-rules h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #7289da; /* Cor do Discord */
+}
+
+
+.discord-rules .rule h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.discord-rules .rule h2 i {
+    margin-right: 10px;
+    color: #7289da; /* Cor do Discord */
+}
+
     </style>
 </head>
 <body>
@@ -324,6 +353,39 @@ nav ul li a:focus {
 
         <!-- Conteúdo Principal -->
         <main>
+            <section class="discord-rules">
+                <h1><i class="fab fa-discord"></i> Regras do Discord</h1>
+            
+                <div class="rule">
+                    <h2><i class="fas fa-comment-dots"></i> Respeito e Cortesia</h2>
+                    <p>Todos os membros devem tratar uns aos outros com respeito. Ofensas, discriminação ou qualquer forma de assédio não serão tolerados.</p>
+                </div>
+            
+                <div class="rule">
+                    <h2><i class="fas fa-user-secret"></i> Privacidade</h2>
+                    <p>Não compartilhe informações pessoais, tanto suas quanto de outros membros, sem permissão. Isso inclui endereços, números de telefone e qualquer outro dado pessoal.</p>
+                </div>
+            
+                <div class="rule">
+                    <h2><i class="fas fa-ban"></i> Conteúdo Inadequado</h2>
+                    <p>Não publique conteúdo NSFW, ilegal ou qualquer material que viole as regras do Discord. Isso inclui imagens, vídeos e links.</p>
+                </div>
+            
+                <div class="rule">
+                    <h2><i class="fas fa-exclamation-triangle"></i> Spamming e Publicidade</h2>
+                    <p>Evite enviar mensagens repetitivas, links não solicitados ou promover produtos e serviços sem permissão dos administradores.</p>
+                </div>
+            
+                <div class="rule">
+                    <h2><i class="fas fa-tools"></i> Moderação e Infrações</h2>
+                    <p>Respeite as decisões dos moderadores e administradores. Se você achar que foi punido injustamente, entre em contato com a equipe de moderação.</p>
+                </div>
+            
+                <div class="rule">
+                    <h2><i class="fas fa-question-circle"></i> Dúvidas e Suporte</h2>
+                    <p>Se você tiver dúvidas sobre as regras ou precisar de ajuda, entre em contato com um moderador. Estamos aqui para ajudar!</p>
+                </div>
+                <!-- Adicione mais regras conforme necessário -->     
             <section class="rule-category">
                 <div class="rule">
                     <h3><i class="fas fa-info-circle"></i> Introdução</h3>
@@ -537,6 +599,14 @@ nav ul li a:focus {
 
     <footer>
         <p>&copy; 2024 AFTER CITY ROLEPLAY. Todos os direitos reservados.</p>
+        <div class="footer-icons">
+            <a href="https://discord.com/yourserver" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="https://instagram.com/yourprofile" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/yourprofile" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="last-update">
+            <p>Última atualização: <span id="last-update-date"></span></p>
+        </div>
     </footer>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -548,8 +618,6 @@ nav ul li a:focus {
                 document.getElementById('loader').style.display = 'none';
             }, 2000); // 2 segundos para sumir
         });
-
-        // scripts.js
 
 // Função para filtrar links na navegação lateral
 document.getElementById('sidebar-search').addEventListener('input', function(e) {
@@ -566,6 +634,13 @@ document.getElementById('sidebar-search').addEventListener('input', function(e) 
     });
 });
 
+
+// Script para mostrar a data da última atualização
+document.getElementById('last-update-date').textContent = new Date().toLocaleDateString('pt-BR', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+});
     </script>
 </body>
 </html>
