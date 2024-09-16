@@ -3,644 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Regras - AFTER CITY ROLEPLAY</title>
+    <title>Lançamento do Novo Site - After City Roleplay</title>
     <style>
-        /* Reset básico */
-        * {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
             display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        /* Loader */
-        #loader {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-            background-color: #121212;
-            display: flex;
-            align-items: center;
             justify-content: center;
-            z-index: 1000;
-            flex-direction: column;
+            align-items: center;
+            height: 100vh;
         }
-        #loader img {
-            width: 80px; /* Tamanho reduzido do logo no loader */
-            animation: rotate 1.5s linear infinite;
+        .container {
+            text-align: center;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        h1 {
+            color: #3498db;
+            font-size: 2em;
             margin-bottom: 20px;
         }
-        #loader p {
-            color: #32cd32;
+        .countdown {
+            font-size: 1.5em;
+            margin: 20px 0;
+            color: #e74c3c;
+        }
+        p {
             font-size: 1.2em;
-            font-weight: bold;
+            margin: 20px 0;
         }
-        @keyframes rotate {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        /* Header e barra superior */
-header {
-    background-color: #1e1e1e;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-        header img {
-            max-width: 100px; /* Tamanho ajustado do logo no header */
-        }
-        .top-nav {
-            display: flex;
-            align-items: center;
-        }
-        .top-nav input[type="search"] {
-            padding: 7px 10px;
-            border-radius: 20px;
+        .button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px 30px;
             border: none;
-            outline: none;
-            margin-right: 20px;
-            background-color: #2a2a2a;
-            color: #ddd;
+            border-radius: 5px;
+            font-size: 1.2em;
+            text-decoration: none;
+            display: inline-block;
             transition: background-color 0.3s ease;
         }
-        .top-nav input[type="search"]:focus {
-            background-color: #333;
+        .button:hover {
+            background-color: #2980b9;
         }
-        .top-nav a {
-            text-decoration: none;
-            color: #32cd32;
+        .logo {
+            font-size: 1.5em;
             font-weight: bold;
-            margin-right: 20px;
-            transition: color 0.3s ease;
-        }
-        .top-nav a:hover {
-            color: #1e90ff;
-        }
-        /* Banner */
-        .banner {
-            width: 100%;
-            height: 250px;
-            background: url('nui/imagens/banner.png') no-repeat center center;
-            background-size: cover;
-            position: relative;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .banner h1 {
-            color: #ffffff;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-            padding: 10px 20px;
-            border-radius: 10px;
-        }
-        /* Navegação lateral */
-        .container {
-            display: flex;
-            flex: 1;
-        }
-        nav {
-            width: 250px;
-            background-color: #1e1e1e;
-            padding: 20px;
-            border-right: 1px solid #333;
-            height: calc(100vh - 80px); /* Altura ajustada considerando o header */
-            overflow-y: auto;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-        nav ul {
-            list-style: none;
-        }
-        nav ul li {
-            margin-bottom: 20px;
-        }
-        nav ul li a {
-            text-decoration: none;
-            color: #ffffff;
-            font-size: 1.1em;
-            display: block;
-            padding: 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease, color 0.3s ease;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-        nav ul li a:hover, nav ul li a.active {
-            background-color: #32cd32;
-            color: #121212;
-        }
-        /* Conteúdo Principal */
-        main {
-            flex: 1;
-            padding: 20px;
-            overflow-y: auto;
-            height: calc(100vh - 80px); /* Altura ajustada considerando o header */
-            background-color: #2a2a2a;
-            border-left: 1px solid #333;
-        }
-        .rule-category {
-            margin-bottom: 40px;
-        }
-        .rule-category h2 {
-            background-color: #32cd32;
-            padding: 15px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-            text-transform: uppercase;
-            color: #121212;
-        }
-        .rule {
-            background-color: #1e1e1e;
-            padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
-        .rule:hover {
-            transform: translateY(-5px);
-            background-color: #2c2c2c;
-        }
-        .rule h3 {
+            color: #2c3e50;
             margin-bottom: 10px;
-            font-size: 1.2em;
-            color: #32cd32;
         }
-        h2 i {
-    margin-right: 10px; /* Espaço entre o ícone e o texto */
-    color: #333; /* Cor do ícone (ajuste conforme necessário) */
-    vertical-align: middle; /* Alinha o ícone com o texto */
-}
-        .rule p {
-            font-size: 1em;
-            color: #ccc;
-            line-height: 1.5;
-        }
-        /* Footer */
-        footer {
-            background-color: #1e1e1e;
-            padding: 10px 20px;
-            text-align: center;
-            font-size: 0.9em;
-            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
-            margin-top: auto;
-        }
-
-        /* Estilos específicos para ícones de regras */
-        .fa-heart { color: #e74c3c; }
-        .fa-exclamation-triangle { color: #f39c12; }
-        .fa-car-crash { color: #3498db; }
-        .fa-bomb { color: #2c3e50; }
-        .fa-fist-raised { color: #27ae60; }
-        .fa-comments { color: #9b59b6; }
-        .fa-plug { color: #95a5a6; }
-        .fa-moon { color: #34495e; }
-
-        /* Estilo específico para os ícones dos títulos */
-.fa-balance-scale { color: #2c3e50; } /* Cor para Regras Gerais */
-.fa-gavel { color: #e74c3c; } /* Cor para Leis */
-
-        /* Estilos específicos para ícones das leis */
-.fa-users { color: #3498db; } /* Cor para Grupos/Organizações Ilegais */
-.fa-shield-alt { color: #2ecc71; } /* Cor para Forças Policiais */
-.fa-user-md { color: #e67e22; } /* Cor para Médicos, Mecânicos, Corretores e Jornalistas */
-.fa-mask { color: #e74c3c; } /* Cor para Assaltos de Rua e Sequestro */
-.fa-car { color: #f39c12; } /* Cor para Roubo de veículos de jogadores */
-.fa-capsules { color: #9b59b6; } /* Cor para Compra e Venda de Drogas */
-.fa-home { color: #95a5a6; } /* Cor para Assalto à Residências */
-.fa-phone-alt { color: #34495e; } /* Cor para Chamados de Serviço */
-
-/* Estilos para a navegação lateral */
-.containerh2 {
-    display: flex;
-    height: 100vh; /* Faz a navegação lateral ocupar toda a altura da página */
-    overflow: hidden;
-}
-
-nav {
-    width: 250px;
-    background-color: #2c2c2c;
-    padding: 20px;
-    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
-    overflow-y: auto; /* Adiciona rolagem se o conteúdo exceder a altura do container */
-}
-
-nav input[type="search"] {
-    width: calc(100% - 20px); /* Ajusta a largura para incluir o padding */
-    padding: 10px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #1e1e1e;
-    color: #fff;
-    font-size: 16px;
-    outline: none;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-nav ul li {
-    margin-bottom: 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-nav ul li a.active {
-    background-color: #575757;
-    color: #fff;
-}
-
-nav ul li a:hover {
-    background-color: #3a3a3a;
-    color: #fff;
-}
-
-
-nav ul li a:focus {
-    outline: 2px solid #ff6600;
-    outline-offset: 2px;
-}
-
-/* Seção de Regras */
-.discord-rules {
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 800px;
-}
-
-.discord-rules h1 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: #7289da; /* Cor do Discord */
-}
-
-
-.discord-rules .rule h2 {
-    margin: 0;
-    font-size: 1.2em;
-    color: #333;
-}
-
-.discord-rules .rule h2 i {
-    margin-right: 10px;
-    color: #7289da; /* Cor do Discord */
-}
-
     </style>
 </head>
 <body>
-    <!-- Loader -->
-    <div id="loader">
-        <img src="nui/imagens/load.png" alt="Carregando...">
-        <p>Carregando...</p>
-    </div>
-
-    <!-- Header e barra superior -->
-    <header>
-        <img src="nui/imagens/logo.png" alt="Logo da Cidade" class="logo">
-        <div class="top-nav">
-            <a href="https://www.instagram.com/seuperfil/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
-            <a href="https://discord.gg/seu-link-aqui" target="_blank"><i class="fab fa-discord"></i> Discord</a>
-            <a href="https://seulinkparaconectaracidade.com" target="_blank"><i class="fas fa-gamepad"></i> Conectar na Cidade</a>
+    <div class="container">
+        <div class="logo">After City Roleplay</div>
+        <h1>🚀 Novo Site em Breve! 🚀</h1>
+        <p>Estamos animados para anunciar que nosso novo site será lançado amanhã, 16 de Outubro!</p>
+        <div class="countdown" id="countdown">
+            <span id="days">00</span>d 
+            <span id="hours">00</span>h 
+            <span id="minutes">00</span>m 
+            <span id="seconds">00</span>s
         </div>
-    </header>
-
-    <!-- Banner -->
-    <div class="banner">
-        <h1>  </h1>
+        <p>Fique ligado e não perca a grande estreia!</p>
+        <a href="#" class="button">Acesse a Página de Lançamento</a>
     </div>
-
-    <div class="containerh2">
-        <!-- Navegação lateral -->
-        <nav>
-            <input type="search" id="sidebar-search" placeholder="Pesquisar...">
-            <ul>
-                <li><a href="#" class="active"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fas fa-book"></i> Regras Gerais</a></li>
-                <li><a href="#"><i class="fas fa-gavel"></i> Leis</a></li>
-                <li><a href="#"><i class="fas fa-info-circle"></i> Introdução</a></li>
-            </ul>
-        </nav>
-
-        <!-- Conteúdo Principal -->
-        <main>
-            <section class="discord-rules">
-                <h1><i class="fab fa-discord"></i> Regras do Discord</h1>
-            
-                <div class="rule">
-                    <h2><i class="fas fa-comment-dots"></i> Respeito e Cortesia</h2>
-                    <p>Todos os membros devem tratar uns aos outros com respeito. Ofensas, discriminação ou qualquer forma de assédio não serão tolerados.</p>
-                </div>
-            
-                <div class="rule">
-                    <h2><i class="fas fa-user-secret"></i> Privacidade</h2>
-                    <p>Não compartilhe informações pessoais, tanto suas quanto de outros membros, sem permissão. Isso inclui endereços, números de telefone e qualquer outro dado pessoal.</p>
-                </div>
-            
-                <div class="rule">
-                    <h2><i class="fas fa-ban"></i> Conteúdo Inadequado</h2>
-                    <p>Não publique conteúdo NSFW, ilegal ou qualquer material que viole as regras do Discord. Isso inclui imagens, vídeos e links.</p>
-                </div>
-            
-                <div class="rule">
-                    <h2><i class="fas fa-exclamation-triangle"></i> Spamming e Publicidade</h2>
-                    <p>Evite enviar mensagens repetitivas, links não solicitados ou promover produtos e serviços sem permissão dos administradores.</p>
-                </div>
-            
-                <div class="rule">
-                    <h2><i class="fas fa-tools"></i> Moderação e Infrações</h2>
-                    <p>Respeite as decisões dos moderadores e administradores. Se você achar que foi punido injustamente, entre em contato com a equipe de moderação.</p>
-                </div>
-            
-                <div class="rule">
-                    <h2><i class="fas fa-question-circle"></i> Dúvidas e Suporte</h2>
-                    <p>Se você tiver dúvidas sobre as regras ou precisar de ajuda, entre em contato com um moderador. Estamos aqui para ajudar!</p>
-                </div>
-                <!-- Adicione mais regras conforme necessário -->     
-            <section class="rule-category">
-                <div class="rule">
-                    <h3><i class="fas fa-info-circle"></i> Introdução</h3>
-                    <p>Os exemplos usados neste site não resumem todas as situações que serão avaliadas em caso de descumprimento das regras, podendo e devendo ainda ser avaliada cada situação em sua individualidade.</p>
-                    <p>Todo banimento poderá ser recorrido, através de ticket, para validação da Administração, podendo ser retirado ou não.</p>
-                    <p>É proibido criar contas duplicadas no nosso painel. Você só pode ter acesso à uma cidade ao mesmo tempo. Se você tem acesso ao Metrópole, você não pode ter acesso ao Metroville, e vice-versa. Criar uma conta duplicada para ter acesso a outra cidade ou fugir de banimentos é passível de banimento permanente.</p>
-                    <p>Todas as punições também, mas não exclusivamente, poderão ser aplicadas em formato de RP (Roleplay), Bloqueio de Mecânicas ou Banimento por Acesso, dependendo da sua intensidade e gravidade, ficando a cargo da avaliação do conselho da Staff.</p>
-                    <p>Caso você perca um ou mais itens de qualquer tipo (incluindo itens VIPs ou de 💎Diamante) que possuem durabilidade durante um período de banimento, os mesmos não serão reembolsados e/ou terão sua durabilidade congelada.</p>
-                    <p>Caso você não logue no servidor ao menos 5 vezes (em dias diferentes), no período de 15 dias, você perderá seu acesso ao servidor, podendo participar do processo de allowlist em outro momento (não garante aprovação).</p>
-                </div>
-            
-                <div class="rule">
-                    <h3><i class="fas fa-hand-paper"></i> Primeira Emenda</h3>
-                    <p>Não toleramos nenhum tipo de preconceito, discriminação, assédio ou importunação. Seja em razão de religião, orientação sexual, nacionalidade, raça, gênero, classe social, deficiência física, características pessoais, etc. Nossa comunidade é para ser um local saudável e divertido para todos. Não respeitar essa regra é passível de banimento permanente (através do IP) do infrator/a da cidade.</p>
-                </div>
-            
-                <div class="rule">
-                    <h3><i class="fas fa-shield-alt"></i> Segunda Emenda</h3>
-                    <p>Todos os membros da staff com “poder” de administrador dentro do servidor devem seguir as seguintes regras, sem exceção:</p>
-                    <ul>
-                        <li>É expressamente proibido a qualquer membro da Staff utilizar informações de log/registro do servidor para tomada de decisões dentro do RP.</li>
-                        <li>Para banir e/ou punir qualquer jogador/personagem que desrespeitar uma regra, o mesmo deve seguir o processo de abertura de ticket e reportar internamente o ocorrido, mesmo que tenha presenciado o problema e/ou faça parte dele.</li>
-                        <li>É obrigação do administrador relatar o desrespeito à regra mesmo que tenha sido feita por um colega também administrador, sendo passível de punição por omissão.</li>
-                        <li>São proibidas ações disciplinares por parte da administração de forma imediata utilizando seus personagens que fazem parte do RP no servidor da Metrópole.</li>
-                        <li>Todas as ações disciplinares devem passar obrigatoriamente pelo conselho da staff para uma votação justa, podendo assim esse grupo decidir ou não por seguir com as devidas punições e/ou absolvições.</li>
-                        <li>Antes de ser um membro da staff, todos são personagens e devem mantê-los enquanto conectados ao RP da Metrópole podendo ser enquadrados pela Regra 10 “Anti-RP” assim como qualquer jogador.</li>
-                    </ul>
-                    <p><strong>Exemplo:</strong> um membro da staff que é admin, dentro da cidade é o Chefe de Polícia e presencia um jogador quebrando a regra de “Amor à Vida”.</p>
-                    <p><strong>O que fazer:</strong> sustentar o RP da melhor forma possível, documentar a situação, abrir um ticket no discord oficial e informar internamente o restante da staff para avaliação e aplicação de possível punição.</p>
-                    <p><strong>O que não fazer:</strong> abrir o console e/ou logar com uma conta com permissão de Admin na cidade, no momento do ocorrido abandonando o RP do seu personagem, e executar imediatamente a punição do jogador, mesmo que a culpa seja explícita.</p>
-                </div>
-                <!-- Adicione mais regras conforme necessário -->
-            </section>
-            <section class="rule-category">
-                <h2><i class="fas fa-balance-scale"></i> Regras Gerais</h2>
-                <div class="rule">
-                    <div class="rule">
-                        <h3><i class="fas fa-heart icon"></i> 1. Amor à vida</h3>
-                        <p>Você deve interpretar seu personagem como se sua vida fosse frágil e única, assim como na vida real. Isso significa tomar decisões que sempre priorizem a sua segurança. Colocar seu personagem em uma situação onde as chances de morrer são maiores do que sobreviver é quebrar a regra de amor à vida.</p>
-                        <p><strong>Exemplo de desrespeito à regra:</strong> reagir a uma situação de troca de tiro estando cercado e em desvantagem numérica. Pular de um lugar muito alto para fugir sabendo que a queda pode matá-lo. Envolver-se em uma troca de tiro apenas “pela diversão”.</p>
-                        <p><strong>Exemplo de respeito à regra:</strong> agir de forma educada quando sofrer uma abordagem policial. Após ferimentos, interagir com o médico visando sua recuperação. Uso progressivo da força ou discurso de acordo com cada situação.</p>
-                        <p><strong>Em caso de descumprimento à regra:</strong> você tem 3 chances, pois acreditamos que você possa ter se enganado.</p>
-                        <ul>
-                            <li>1ª vez: até 3 dias de banimento e uma notificação oficial.</li>
-                            <li>2ª vez: PD (Permanent Death), podendo criar outro personagem.</li>
-                            <li>3ª vez: banimento permanente e/ou indeterminado do servidor.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="rule">
-                        <h3><i class="fas fa-exclamation-triangle icon"></i> 2. Metagaming</h3>
-                        <p>É proibido o uso de informações obtidas fora do jogo (metagaming) para ganhar vantagem dentro do jogo.</p>
-                        <p><strong>Exemplo de desrespeito à regra:</strong> usar informações de transmissões ao vivo ou redes sociais para beneficiar seu personagem no jogo.</p>
-                        <p><strong>Exemplo de respeito à regra:</strong> manter a narrativa do jogo e as interações baseadas apenas nas informações adquiridas dentro do jogo.</p>
-                        <p><strong>Em caso de descumprimento à regra:</strong> pode resultar em advertência ou banimento temporário, dependendo da gravidade da infração.</p>
-                        <ul>
-                            <li>1ª vez: até 3 dias de banimento e uma notificação oficial.</li>
-                            <li>2ª vez: PD (Permanent Death), podendo criar outro personagem.</li>
-                            <li>3ª vez: banimento permanente e/ou indeterminado do servidor.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="rule">
-                        <h3><i class="fas fa-car-crash icon"></i> 3. VDM (Vehicle Deathmatch)</h3>
-                        <p>VDM é o ato de atropelar jogadores sem motivo válido dentro da narrativa do jogo. Atropelar outros jogadores de maneira intencional e sem contexto é quebrar a regra de VDM.</p>
-                        <p><strong>Exemplo de desrespeito à regra:</strong> atropelar jogadores de forma intencional sem uma razão válida na narrativa do jogo.</p>
-                        <p><strong>Exemplo de respeito à regra:</strong> utilizar veículos de forma apropriada e dentro do contexto das situações roleplay.</p>
-                        <p><strong>Em caso de descumprimento à regra:</strong> pode resultar em banimento temporário ou permanente, dependendo da gravidade e reincidência.</p>
-                        <ul>
-                            <li>1ª vez: até 3 dias de banimento e uma notificação oficial.</li>
-                            <li>2ª vez: PD (Permanent Death), podendo criar outro personagem.</li>
-                            <li>3ª vez: banimento permanente e/ou indeterminado do servidor.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="rule">
-                        <h3><i class="fas fa-bomb icon"></i> 4. RDM (Random Deathmatch)</h3>
-                        <p>RDM é o ato de matar outro jogador sem uma razão válida ou narrativa adequada. Matar jogadores aleatoriamente ou sem interação prévia quebra a imersão do jogo.</p>
-                        <p><strong>Exemplo de desrespeito à regra:</strong> matar um jogador sem qualquer motivo ou interação prévia.</p>
-                        <p><strong>Exemplo de respeito à regra:</strong> envolver-se em confrontos baseados em uma narrativa ou justificativa dentro do roleplay.</p>
-                        <p><strong>Em caso de descumprimento à regra:</strong> pode resultar em advertência, banimento temporário ou PD (Permanent Death).</p>
-                        <ul>
-                            <li>1ª vez: até 3 dias de banimento e uma notificação oficial.</li>
-                            <li>2ª vez: PD (Permanent Death), podendo criar outro personagem.</li>
-                            <li>3ª vez: banimento permanente e/ou indeterminado do servidor.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="rule">
-                        <h3><i class="fas fa-fist-raised icon"></i> 5. Powergaming</h3>
-                        <p>Powergaming é a prática de forçar ações ou situações sobre outros jogadores de maneira que eles não possam responder adequadamente, ou usar de mecânicas do jogo de forma irrealista.</p>
-                        <p><strong>Exemplo de desrespeito à regra:</strong> forçar uma situação onde o outro jogador não tem a possibilidade de reagir de maneira justa.</p>
-                        <p><strong>Exemplo de respeito à regra:</strong> criar situações onde todas as partes têm a chance de responder e interagir de forma realista.</p>
-                        <p><strong>Em caso de descumprimento à regra:</strong> pode resultar em advertência ou banimento temporário.</p>
-                        <ul>
-                            <li>1ª vez: até 3 dias de banimento e uma notificação oficial.</li>
-                            <li>2ª vez: PD (Permanent Death), podendo criar outro personagem.</li>
-                            <li>3ª vez: banimento permanente e/ou indeterminado do servidor.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="rule">
-                        <h3><i class="fas fa-comments icon"></i> 6. Flaming</h3>
-                        <p>Flaming é o uso de linguagem ofensiva ou insultos para atacar outros jogadores fora do contexto de roleplay. Isso inclui ofensas pessoais, racismo, machismo, e qualquer outro tipo de discriminação.</p>
-                        <p><strong>Exemplo de desrespeito à regra:</strong> fazer comentários ou ataques diretos a outros jogadores.</p>
-                        <p><strong>Exemplo de respeito à regra:</strong> manter a comunicação respeitosa e apropriada durante o jogo.</p>
-                        <p><strong>Em caso de descumprimento à regra:</strong> pode resultar em advertência, banimento temporário ou permanente, dependendo da gravidade.</p>
-                        <ul>
-                            <li>1ª vez: até 3 dias de banimento e uma notificação oficial.</li>
-                            <li>2ª vez: PD (Permanent Death), podendo criar outro personagem.</li>
-                            <li>3ª vez: banimento permanente e/ou indeterminado do servidor.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="rule">
-                        <h3><i class="fas fa-plug icon"></i> 7. Exploits</h3>
-                        <p>Exploits são o uso de falhas ou brechas no jogo para obter vantagens injustas. Qualquer forma de exploração de falhas no jogo é proibida.</p>
-                        <p><strong>Exemplo de desrespeito à regra:</strong> usar glitches ou bugs para ganhar vantagens no jogo.</p>
-                        <p><strong>Exemplo de respeito à regra:</strong> reportar falhas ou bugs ao admin e jogar de maneira justa.</p>
-                        <p><strong>Em caso de descumprimento à regra:</strong> pode resultar em advertência, banimento temporário ou permanente, dependendo da gravidade.</p>
-                        <ul>
-                            <li>1ª vez: até 3 dias de banimento e uma notificação oficial.</li>
-                            <li>2ª vez: PD (Permanent Death), podendo criar outro personagem.</li>
-                            <li>3ª vez: banimento permanente e/ou indeterminado do servidor.</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="rule">
-                        <h3><i class="fas fa-moon icon"></i> 8. Uso de Contas Alternativas</h3>
-                        <p>É proibido o uso de contas alternativas para escapar de penalidades ou para manipular o jogo de forma injusta.</p>
-                        <p><strong>Exemplo de desrespeito à regra:</strong> criar múltiplas contas para burlar banimentos ou restrições.</p>
-                        <p><strong>Exemplo de respeito à regra:</strong> manter uma única conta e jogar de maneira honesta e justa.</p>
-                        <p><strong>Em caso de descumprimento à regra:</strong> pode resultar em banimento permanente e perda de acesso ao servidor.</p>
-                        <ul>
-                            <li>1ª vez: até 3 dias de banimento e uma notificação oficial.</li>
-                            <li>2ª vez: PD (Permanent Death), podendo criar outro personagem.</li>
-                            <li>3ª vez: banimento permanente e/ou indeterminado do servidor.</li>
-                        </ul>
-                    </div>                                    
-                <!-- Adicione mais regras conforme necessário -->
-            </section>
-            <section class="rule-category">
-                <h2><i class="fas fa-gavel"></i> Leis</h2>
-                <div class="rule">
-                    <h3><i class="fas fa-users icon"></i> 1. Grupos/Organizações Ilegais</h3>
-                    <p>Grupos ou organizações ilegais devem operar dentro das limitações do roleplay e não devem causar desbalanceamento no jogo. A criação e atuação de facções criminosas devem seguir as diretrizes do servidor e não prejudicar a experiência de outros jogadores.</p>
-                    <p><strong><i class="fas fa-exclamation-triangle icon"></i> Exemplo de desrespeito à lei:</strong> criar grupos que atuem de forma exagerada ou que interfiram negativamente na experiência de outros jogadores.</p>
-                    <p><strong><i class="fas fa-check-circle icon"></i> Exemplo de respeito à lei:</strong> organizar e participar de grupos criminosos dentro dos limites e regras do roleplay, respeitando a dinâmica do jogo.</p>
-                    <p><strong><i class="fas fa-hand-paper icon"></i> Em caso de descumprimento à lei:</strong> pode resultar em advertência, banimento temporário ou ações corretivas específicas para a facção envolvida.</p>
-                </div>
-                
-                <div class="rule">
-                    <h3><i class="fas fa-shield-alt icon"></i> 2. Forças Policiais</h3>
-                    <p>As forças policiais devem agir de acordo com as leis e procedimentos estabelecidos no roleplay. Isso inclui a aplicação de leis de maneira justa e o tratamento adequado dos cidadãos.</p>
-                    <p><strong><i class="fas fa-exclamation-triangle icon"></i> Exemplo de desrespeito à lei:</strong> usar a força policial de maneira abusiva ou não seguir os procedimentos estabelecidos.</p>
-                    <p><strong><i class="fas fa-check-circle icon"></i> Exemplo de respeito à lei:</strong> seguir os procedimentos policiais e tratar todos os cidadãos de maneira justa e imparcial.</p>
-                    <p><strong><i class="fas fa-hand-paper icon"></i> Em caso de descumprimento à lei:</strong> pode resultar em advertência, suspensão ou outras penalidades conforme a gravidade da infração.</p>
-                </div>
-                
-                <div class="rule">
-                    <h3><i class="fas fa-user-md icon"></i> 3. Médicos, Mecânicos, Corretores e Jornalistas</h3>
-                    <p>Profissionais como médicos, mecânicos, corretores e jornalistas devem realizar suas funções dentro dos parâmetros do roleplay e respeitar as regras estabelecidas para suas profissões.</p>
-                    <p><strong><i class="fas fa-exclamation-triangle icon"></i> Exemplo de desrespeito à lei:</strong> fornecer serviços de maneira inadequada ou fora do contexto do roleplay.</p>
-                    <p><strong><i class="fas fa-check-circle icon"></i> Exemplo de respeito à lei:</strong> prestar serviços de acordo com as expectativas e normas do servidor, mantendo a qualidade e o realismo.</p>
-                    <p><strong><i class="fas fa-hand-paper icon"></i> Em caso de descumprimento à lei:</strong> pode resultar em advertência ou restrição das atividades profissionais.</p>
-                </div>
-                
-                <div class="rule">
-                    <h3><i class="fas fa-mask icon"></i> 4. Assaltos de Rua e Sequestro</h3>
-                    <p>Assaltos de rua e sequestros devem ser conduzidos de acordo com as regras do roleplay e respeitar as normas estabelecidas para situações de alta tensão.</p>
-                    <p><strong><i class="fas fa-exclamation-triangle icon"></i> Exemplo de desrespeito à lei:</strong> realizar assaltos ou sequestros de maneira abusiva ou sem justificativa adequada.</p>
-                    <p><strong><i class="fas fa-check-circle icon"></i> Exemplo de respeito à lei:</strong> realizar ações de assalto ou sequestro com uma narrativa convincente e dentro das regras do servidor.</p>
-                    <p><strong><i class="fas fa-hand-paper icon"></i> Em caso de descumprimento à lei:</strong> pode resultar em penalidades como advertência, banimento temporário ou outras medidas corretivas.</p>
-                </div>
-                
-                <div class="rule">
-                    <h3><i class="fas fa-car icon"></i> 5. Roubo de veículos de jogadores</h3>
-                    <p>O roubo de veículos deve seguir as diretrizes do roleplay, incluindo a justificativa adequada e o respeito pelas regras estabelecidas para tais ações.</p>
-                    <p><strong><i class="fas fa-exclamation-triangle icon"></i> Exemplo de desrespeito à lei:</strong> roubar veículos de maneira aleatória ou sem uma razão adequada no contexto do jogo.</p>
-                    <p><strong><i class="fas fa-check-circle icon"></i> Exemplo de respeito à lei:</strong> realizar o roubo de veículos de acordo com uma narrativa apropriada e dentro das regras do servidor.</p>
-                    <p><strong><i class="fas fa-hand-paper icon"></i> Em caso de descumprimento à lei:</strong> pode resultar em penalidades como advertência ou banimento temporário.</p>
-                </div>
-                
-                <div class="rule">
-                    <h3><i class="fas fa-capsules icon"></i> 6. Compra e Venda de Drogas</h3>
-                    <p>A compra e venda de drogas devem ser realizadas de acordo com as regras do roleplay, incluindo a necessidade de uma justificativa adequada e o respeito pelas regras estabelecidas para tais atividades.</p>
-                    <p><strong><i class="fas fa-exclamation-triangle icon"></i> Exemplo de desrespeito à lei:</strong> realizar transações de drogas de maneira irrealista ou fora do contexto do roleplay.</p>
-                    <p><strong><i class="fas fa-check-circle icon"></i> Exemplo de respeito à lei:</strong> participar de transações de drogas de forma realista e dentro dos limites estabelecidos pelo servidor.</p>
-                    <p><strong><i class="fas fa-hand-paper icon"></i> Em caso de descumprimento à lei:</strong> pode resultar em advertência, banimento temporário ou outras penalidades.</p>
-                </div>
-                
-                <div class="rule">
-                    <h3><i class="fas fa-home icon"></i> 7. Assalto à Residências</h3>
-                    <p>Assaltos a residências devem ser conduzidos de maneira adequada e respeitar as regras estabelecidas para tais situações.</p>
-                    <p><strong><i class="fas fa-exclamation-triangle icon"></i> Exemplo de desrespeito à lei:</strong> realizar assaltos a residências sem uma justificativa válida ou fora do contexto do roleplay.</p>
-                    <p><strong><i class="fas fa-check-circle icon"></i> Exemplo de respeito à lei:</strong> realizar assaltos a residências com uma narrativa convincente e dentro das regras do servidor.</p>
-                    <p><strong><i class="fas fa-hand-paper icon"></i> Em caso de descumprimento à lei:</strong> pode resultar em penalidades como advertência ou banimento temporário.</p>
-                </div>
-                
-                <div class="rule">
-                    <h3><i class="fas fa-phone-alt icon"></i> 8. Chamados de Serviço</h3>
-                    <p>Chamados de serviço devem ser tratados com seriedade e de acordo com as regras do servidor. Isso inclui responder a chamados de maneira adequada e respeitar o contexto do roleplay.</p>
-                    <p><strong><i class="fas fa-exclamation-triangle icon"></i> Exemplo de desrespeito à lei:</strong> ignorar chamados de serviço ou responder de maneira inadequada.</p>
-                    <p><strong><i class="fas fa-check-circle icon"></i> Exemplo de respeito à lei:</strong> atender aos chamados de serviço com seriedade e seguir as regras estabelecidas.</p>
-                    <p><strong><i class="fas fa-hand-paper icon"></i> Em caso de descumprimento à lei:</strong> pode resultar em advertência ou penalidades conforme a gravidade da infração.</p>
-                </div>                             
-                <!-- Adicione mais regras conforme necessário -->
-            </section>
-        </main>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 AFTER CITY ROLEPLAY. Todos os direitos reservados.</p>
-        <div class="footer-icons">
-            <a href="https://discord.com/yourserver" target="_blank" title="Discord"><i class="fab fa-discord"></i></a>
-            <a href="https://instagram.com/yourprofile" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://twitter.com/yourprofile" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-        </div>
-        <div class="last-update">
-            <p>Última atualização: <span id="last-update-date"></span></p>
-        </div>
-    </footer>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <script>
-        // Simulação do loader
-        document.addEventListener("DOMContentLoaded", function() {
-            setTimeout(function() {
-                document.getElementById('loader').style.display = 'none';
-            }, 2000); // 2 segundos para sumir
-        });
+        function updateCountdown() {
+            const launchDate = new Date("October 16, 2024 00:00:00").getTime();
+            const now = new Date().getTime();
+            const distance = launchDate - now;
+            
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-// Função para filtrar links na navegação lateral
-document.getElementById('sidebar-search').addEventListener('input', function(e) {
-    const searchTerm = e.target.value.toLowerCase();
-    const links = document.querySelectorAll('nav ul li a');
+            document.getElementById('days').innerText = days < 10 ? '0' + days : days;
+            document.getElementById('hours').innerText = hours < 10 ? '0' + hours : hours;
+            document.getElementById('minutes').innerText = minutes < 10 ? '0' + minutes : minutes;
+            document.getElementById('seconds').innerText = seconds < 10 ? '0' + seconds : seconds;
 
-    links.forEach(link => {
-        const text = link.textContent.toLowerCase();
-        if (text.includes(searchTerm)) {
-            link.style.display = 'block';
-        } else {
-            link.style.display = 'none';
+            if (distance < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById('countdown').innerHTML = "O site foi lançado!";
+            }
         }
-    });
-});
 
-
-// Script para mostrar a data da última atualização
-document.getElementById('last-update-date').textContent = new Date().toLocaleDateString('pt-BR', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-});
+        const countdownInterval = setInterval(updateCountdown, 1000);
+        updateCountdown();
     </script>
 </body>
 </html>
