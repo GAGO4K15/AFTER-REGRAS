@@ -3,105 +3,1011 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lançamento do Novo Site - After City Roleplay</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            max-width: 600px;
-            width: 100%;
-        }
-        h1 {
-            color: #3498db;
-            font-size: 2em;
-            margin-bottom: 20px;
-        }
-        .countdown {
-            font-size: 1.5em;
-            margin: 20px 0;
-            color: #e74c3c;
-            font-weight: bold;
-        }
-        p {
-            font-size: 1.2em;
-            margin: 20px 0;
-        }
-        .button {
-            background-color: #3498db;
-            color: #fff;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            font-size: 1.2em;
-            text-decoration: none;
-            display: inline-block;
-            transition: background-color 0.3s ease;
-        }
-        .button:hover {
-            background-color: #2980b9;
-        }
-        .logo {
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 10px;
-        }
-    </style>
+    <title>Site Oficial - After City</title>
+    <link rel="stylesheet" href="nui/css/styles-loja.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <div class="container">
-        <div class="logo">After City Roleplay</div>
-        <h1>🚀 Novo Site em Breve! 🚀</h1>
-        <p>Estamos animados para anunciar que nosso novo site será lançado amanhã, 16 de Setembro!</p>
-        <div class="countdown" id="countdown">
-            <span id="days">00</span>d 
-            <span id="hours">00</span>h 
-            <span id="minutes">00</span>m 
-            <span id="seconds">00</span>s
+    <div class="loader-overlay">
+        <div class="loader">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Carregando...</p>
         </div>
-        <p>Fique ligado e não perca a grande estreia!</p>
-        <a href="#" class="button">Acesse a Página de Lançamento</a>
     </div>
 
+    <header>
+        <div class="banner">
+            <img src="nui/images/wallpaper-1.jpg" alt="Banner da Loja">
+            <div class="logo">
+                <img src="nui/images/logoaf.png" alt="Logo da Loja">
+            </div>
+        </div>
+    </header>    
+
+    <div class="beta-announcement">
+        <h1>🚀 Prepare-se para a Beta do After City Roleplay! 🚀</h1>
+        <p>A data está marcada! No dia <strong>21 de Setembro</strong>, vamos abrir as portas para a tão esperada <span class="highlight">Beta do After City Roleplay</span>!</p>
+        <p>Esteja entre os primeiros a experimentar um servidor inovador, cheio de novas funcionalidades, eventos emocionantes e uma jogabilidade imersiva. Tudo isso com uma equipe dedicada a entregar a melhor experiência possível para a nossa comunidade!</p>
+        <p class="cta">🌟 Não perca essa oportunidade! Marque no calendário e venha explorar o After City de uma maneira que você nunca viu antes! 🌟</p>
+        <a href="#" class="join-button">Participe da Beta</a>
+    </div>
+    
+    <style>
+        .beta-announcement {
+            background-color: #1e1e1e;
+            color: #f5f5f5;
+            text-align: center;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 800px;
+            margin: 50px auto;
+        }
+        .beta-announcement h1 {
+            font-size: 2.5em;
+            color: #e74c3c;
+        }
+        .beta-announcement .highlight {
+            color: #3498db;
+            font-weight: bold;
+        }
+        .beta-announcement p {
+            font-size: 1.2em;
+            margin: 20px 0;
+        }
+        .beta-announcement .cta {
+            font-size: 1.5em;
+            color: #f39c12;
+            font-weight: bold;
+            margin: 30px 0;
+        }
+        .join-button {
+            background-color: #e74c3c;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.3em;
+            transition: background-color 0.3s;
+        }
+        .join-button:hover {
+            background-color: #c0392b;
+        }
+    </style>
+    
+
+<!-- Seção Sobre a Cidade -->
+<section id="sobre-cidade" class="info-section">
+    <h2 class="section-title"><i class="fas fa-city"></i> Sobre a Cidade</h2>
+<div class="info-content">
+    <div class="info-text">
+        <p><strong>Bem-vindo à nossa cidade!</strong> Nossa cidade é um lugar vibrante e cheio de oportunidades. Com diversos bairros, pontos turísticos e uma vida noturna ativa, você nunca ficará entediado. Explore, interaja e descubra tudo o que nossa cidade tem a oferecer. 
+            <span class="emoti"><i class="fas fa-map-signs" style="color: #e67e22;"></i></span> 
+            <span class="emoti"><i class="fas fa-landmark" style="color: #27ae60;"></i></span> 
+            <span class="emoti"><i class="fas fa-nightlife" style="color: #8e44ad;"></i></span>
+        </p>
+
+        <p>De áreas residenciais tranquilas a centros comerciais movimentados, cada canto da cidade tem algo único para você experimentar. Venha fazer parte da nossa comunidade e aproveite ao máximo sua experiência. 
+            <span class="emoti"><i class="fas fa-city" style="color: #3498db;"></i></span> 
+            <span class="emoti"><i class="fas fa-users" style="color: #f39c12;"></i></span>
+        </p>            
+    </div>
+        <div class="info-image">
+            <img src="nui/images/cidade.png" alt="Cidade">
+        </div>
+    </div>
+</section>
+
+<!-- Seção Staff -->
+<section class="staff-section">
+    <h2 class="section-title">
+        <span class="title-left" style="color: #3498db;"><i class="fas fa-users"></i> Nossa</span> 
+        <span class="title-right" style="color: #e74c3c;">Equipe</span>
+    </h2>
+    <div class="staff-cards">
+      <div class="staff-card">
+        <img src="https://cdn.discordapp.com/avatars/1185280313430114326/a_0b72d5d271e869fc31eb645aa036c80a.gif?size=2048" alt="Foto do Staff">
+        <h3>Gago4k<span class="emoti"><i class="fas fa-star" style="color: gold;"></i></span></h3>
+        <p class="staff-role">CEO & Desenvolvedor <span class="emoti"><i class="fas fa-crown" style="color: #f39c12;"></i></span> <span class="emoti"><i class="fas fa-code" style="color: #3498db;"></i></span></p>
+        <p class="staff-description">Responsável por liderar a cidade, desenvolver novas funcionalidades e garantir a melhor experiência para todos os jogadores.</p>        
+      </div>
+      <div class="staff-card">
+        <img src="https://cdn.discordapp.com/avatars/1185280313430114326/a_0b72d5d271e869fc31eb645aa036c80a.gif?size=2048" alt="Foto do Staff">
+        <h3>Bhenois<span class="emoti"><i class="fas fa-star" style="color: gold;"></i></span></h3>
+        <p class="staff-role">CEO & Desenvolvedor <span class="emoti"><i class="fas fa-crown" style="color: #f39c12;"></i></span> <span class="emoti"><i class="fas fa-code" style="color: #3498db;"></i></span></p>
+        <p class="staff-description">Responsável por liderar a cidade, desenvolver novas funcionalidades e garantir a melhor experiência para todos os jogadores.</p>        
+      </div>
+      <div class="staff-card">
+        <img src="https://cdn.discordapp.com/avatars/1185280313430114326/a_0b72d5d271e869fc31eb645aa036c80a.gif?size=2048" alt="Foto do Staff">
+        <h3>Connor <span class="emoti"><i class="fas fa-star" style="color: gold;"></i></span></h3>
+        <p class="staff-role">CEO & Desenvolvedor <span class="emoti"><i class="fas fa-crown" style="color: #f39c12;"></i></span> <span class="emoti"><i class="fas fa-code" style="color: #3498db;"></i></span></p>
+        <p class="staff-description">Responsável por liderar a cidade, desenvolver novas funcionalidades e garantir a melhor experiência para todos os jogadores.</p>
+    </div>    
+      <div class="staff-card" style="background-color: #fff; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 15px; width: 250px; text-align: center;">
+        <img src="https://cdn.discordapp.com/avatars/1185280313430114326/a_0b72d5d271e869fc31eb645aa036c80a.gif?size=2048" alt="Foto do Staff">
+        <h3>Carito <span class="emoti"><i class="fas fa-user-tie" style="color: #f1c40f;"></i></span></h3>
+        <p class="staff-role">Staff <span class="emoti"><i class="fas fa-city" style="color: #e67e22;"></i></span></p>
+        <p class="staff-description">Membro dedicado da equipe de Staff, sempre pronto para ajudar a comunidade e garantir que todos sigam as regras da cidade, proporcionando uma experiência justa e divertida.</p>
+        <div class="staff-card" style="background-color: #fff; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); padding: 15px; width: 250px; text-align: center;">
+            <img src="https://cdn.discordapp.com/avatars/1185280313430114326/a_0b72d5d271e869fc31eb645aa036c80a.gif?size=2048" alt="Foto do Staff">
+            <h3>Davi <span class="emoti"><i class="fas fa-user-tie" style="color: #f1c40f;"></i></span></h3>
+            <p class="staff-role">Staff <span class="emoti"><i class="fas fa-city" style="color: #e67e22;"></i></span></p>
+            <p class="staff-description">Membro dedicado da equipe de Staff, sempre pronto para ajudar a comunidade e garantir que todos sigam as regras da cidade, proporcionando uma experiência justa e divertida.</p>
+    </div>
+  </section>
+  
+  <style>
+  /* Estilo da seção Staff */
+  .staff-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    color: #464343;
+    margin-bottom: 40px;
+  }
+  
+  /* Estilos dos cards da equipe */
+  .staff-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .staff-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    text-align: center;
+  }
+  
+  .staff-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .staff-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .staff-role {
+    font-size: 16px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .staff-description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Estilo para Emoticons */
+  .emoti {
+    margin-left: 5px;
+  }
+  </style>
+
+<h1>Regras para Candidatura à Staff</h1>
+<div class="rules-container">
+    <div class="rule-item">
+        <div class="rule-number">1</div>
+        <div class="rule-content">
+            <p class="rule-title">Idade Mínima:</p>
+            <p>O candidato deve ter no mínimo <strong>12 anos de idade</strong> para se candidatar à equipe de staff.</p>
+        </div>
+    </div>
+
+    <div class="rule-item">
+        <div class="rule-number">2</div>
+        <div class="rule-content">
+            <p class="rule-title">Maturidade e Responsabilidade:</p>
+            <p>Demonstrar <strong>maturidade</strong> e <strong>responsabilidade</strong> nas ações dentro e fora do servidor, sendo capaz de lidar com situações difíceis de maneira calma e profissional.</p>
+        </div>
+    </div>
+
+    <div class="rule-item">
+        <div class="rule-number">3</div>
+        <div class="rule-content">
+            <p class="rule-title">Conhecimento das Regras:</p>
+            <p>Conhecer e seguir <strong>rigorosamente</strong> todas as regras do servidor, garantindo que elas sejam cumpridas por todos os jogadores.</p>
+        </div>
+    </div>
+
+    <div class="rule-item">
+        <div class="rule-number">4</div>
+        <div class="rule-content">
+            <p class="rule-title">Disponibilidade de Tempo:</p>
+            <p>O candidato deve estar disponível para dedicar um mínimo de <strong>X horas por semana</strong> para ajudar no servidor.</p>
+        </div>
+    </div>
+
+    <div class="rule-item">
+        <div class="rule-number">5</div>
+        <div class="rule-content">
+            <p class="rule-title">Comunicação Clara:</p>
+            <p>Manter uma <strong>comunicação clara e educada</strong> com todos os jogadores e outros membros da equipe.</p>
+        </div>
+    </div>
+
+    <div class="rule-item">
+        <div class="rule-number">6</div>
+        <div class="rule-content">
+            <p class="rule-title">Resolução de Conflitos:</p>
+            <p>Ser capaz de resolver conflitos entre jogadores de maneira justa, sem favoritismo, e aplicando as regras de forma <strong>imparcial</strong>.</p>
+        </div>
+    </div>
+
+    <div class="rule-item">
+        <div class="rule-number">7</div>
+        <div class="rule-content">
+            <p class="rule-title">Trabalho em Equipe:</p>
+            <p>Ser capaz de trabalhar de forma colaborativa com outros membros da staff.</p>
+        </div>
+    </div>
+
+    <div class="rule-item">
+        <div class="rule-number">8</div>
+        <div class="rule-content">
+            <p class="rule-title">Exemplo para a Comunidade:</p>
+            <p>O staff deve agir como exemplo, mantendo uma <strong>atitude respeitosa</strong> e comportamento adequado.</p>
+        </div>
+    </div>
+
+    <div class="rule-item">
+        <div class="rule-number">9</div>
+        <div class="rule-content">
+            <p class="rule-title">Proibição de Abuso de Poder:</p>
+            <p>Abusar dos privilégios de staff é <strong>estritamente proibido</strong>. Comportamento inadequado resultará em medidas disciplinares.</p>
+        </div>
+    </div>
+
+    <div class="rule-item">
+        <div class="rule-number">10</div>
+        <div class="rule-content">
+            <p class="rule-title">Compromisso com o Servidor:</p>
+            <p>Os membros da staff devem estar comprometidos com o crescimento e melhoria do servidor.</p>
+        </div>
+    </div>
+
+    <a href="https://forms.gle/65APHBAgQgdag7wV8" class="apply-btn">Fazer Candidatura à Staff</a>
+</div>
+
+<!-- Notificação -->
+<div class="notification-container" id="notification-container">
+    <div class="notification">
+        <p>
+            <i class="fas fa-bullhorn"></i> <strong>Promoção da Semana!</strong> 
+            <span class="highlight">Descontos de até 10% em todos os produtos da loja.</span>
+        </p>        
+        <button id="close-notification" aria-label="Fechar">&times;</button>
+    </div>
+</div>
+
+
+<audio id="show-sound" src="nui/audio/infobleep-87963.mp3" preload="auto"></audio>
+<audio id="close-sound" src="nui/audio/error-5-199276.mp3" preload="auto"></audio>
+
+<script>
+// Script de Notificação
+document.addEventListener("DOMContentLoaded", function() {
+    const notificationContainer = document.getElementById('notification-container');
+    const closeNotification = document.getElementById('close-notification');
+    const showSound = document.getElementById('show-sound');
+    const closeSound = document.getElementById('close-sound');
+
+    // Função para mostrar a notificação
+    function showNotification() {
+        // Assegura que o áudio pode ser reproduzido
+        showSound.play().catch(error => console.log("Erro ao tocar o som de exibição: ", error));
+        
+        notificationContainer.style.display = 'block'; // Garante que a notificação esteja visível
+        notificationContainer.style.opacity = '1';
+        notificationContainer.style.transform = 'translateY(0)';
+
+        // Fechar automaticamente após 10 segundos
+        setTimeout(() => {
+            notificationContainer.style.opacity = '0';
+            notificationContainer.style.transform = 'translateY(100px)';
+            setTimeout(() => notificationContainer.style.display = 'none', 1000); // Adiciona um pequeno atraso para garantir que a notificação seja ocultada após a animação
+        }, 10000);
+    }
+
+    // Fechar notificação ao clicar no botão
+    closeNotification.addEventListener('click', function() {
+        closeSound.play().catch(error => console.log("Erro ao tocar o som de fechamento: ", error)); // Assegura que o áudio pode ser reproduzido
+        notificationContainer.style.opacity = '0';
+        notificationContainer.style.transform = 'translateY(100px)';
+        setTimeout(() => notificationContainer.style.display = 'none', 300); // Adiciona um pequeno atraso para garantir que a notificação seja ocultada após o som
+    });
+        // Mostrar a notificação após uma interação do usuário
+        document.body.addEventListener('click', () => {
+        showNotification();
+    }, { once: true }); // Garante que a notificação só seja mostrada uma vez após a interação inicial
+});
+</script>
+    
+<section id="loja-virtual">
+    <h1><i class="fas fa-store" style="color: #e67e22;"></i> Loja Virtual - After City <i class="fas fa-gem" style="color: #f39c12;"></i></h1>
+    <div class="loja-container">
+        <article class="produto-item">
+            <div class="produto-imagem">
+                <img src="https://storage.hydrus.gg/production/packages/fycveJUbpwSR3H5L9ZpyBQc1AbJI8rlu3DsYEWVLosK31SFv9QtYO5nuYma0547N.png" alt="VIP Bronze">
+            </div>
+            <div class="produto-info">
+                <h2><i class="fas fa-gem" style="color: #cd7f32;"></i> VIP Bronze</h2>
+                <p class="preco">R$ 15</p>
+                <ul class="beneficios">
+                    <li><i class="fas fa-car" style="color: #3498db;"></i> 1 carro exclusivo</li>
+                    <li><i class="fas fa-tshirt" style="color: #e74c3c;"></i> 1 skin masculina</li>
+                    <li><i class="fas fa-tshirt" style="color: #e74c3c;"></i> 1 skin feminina</li>
+                    <li><i class="fas fa-check" style="color: #2ecc71;"></i> Acesso a áreas exclusivas</li>
+                    <li><i class="fas fa-money-bill-wave" style="color: #f39c12;"></i> Salário VIP Bronze: $10,000</li>
+                    <li><i class="fas fa-user-tag" style="color: #8e44ad;"></i> Prefixo VIP em chat</li>
+                </ul>
+                <p class="descricao">O pacote VIP Bronze oferece benefícios básicos e uma introdução ao status VIP na After City.</p>
+            </div>
+        </article>
+        <article class="produto-item">
+            <div class="produto-imagem">
+                <img src="https://storage.hydrus.gg/production/packages/IZJkDkich3kWfF5GBUlWDDzquiFKrerqegm1JNiGBhPCWIu5TTRSJgk08wYOZds3.png" alt="VIP Prata">
+            </div>
+            <div class="produto-info">
+                <h2><i class="fas fa-gem" style="color: #aaa5a5;"></i> VIP Prata</h2>
+                <p class="preco">R$ 30</p>
+                <ul class="beneficios">
+                    <li><i class="fas fa-car" style="color: #3498db;"></i> 1 carro exclusivo</li>
+                    <li><i class="fas fa-tshirt" style="color: #e74c3c;"></i> 1 skin masculina</li>
+                    <li><i class="fas fa-tshirt" style="color: #e74c3c;"></i> 1 skin feminina</li>
+                    <li><i class="fas fa-check" style="color: #2ecc71;"></i> Todos os benefícios do VIP Bronze</li>
+                    <li><i class="fas fa-money-bill-wave" style="color: #f39c12;"></i> Salário VIP Prata: $20,000</li>
+                    <li><i class="fas fa-calendar-check" style="color: #e67e22;"></i> Acesso a eventos exclusivos</li>
+                    <li><i class="fas fa-badge" style="color: #8e44ad;"></i> Emblema VIP no perfil</li>
+                </ul>
+                <p class="descricao">O pacote VIP Prata oferece mais benefícios e acesso a eventos especiais na After City.</p>
+            </div>
+        </article>
+        <article class="produto-item">
+            <div class="produto-imagem">
+                <img src="https://storage.hydrus.gg/production/packages/pWHEZ0GEVVbdsPOjIR4nzzBLui2V4tDyBentNmtS136EgSXhPWZtMqaGW1vzfkmJ.png" alt="VIP Ouro">
+            </div>
+            <div class="produto-info">
+                <h2><i class="fas fa-gem" style="color: #ffd700;"></i> VIP Ouro</h2>
+                <p class="preco">R$ 45</p>
+                <ul class="beneficios">
+                    <li><i class="fas fa-car" style="color: #3498db;"></i> 2 carros exclusivos</li>
+                    <li><i class="fas fa-tshirt" style="color: #e74c3c;"></i> 2 skins masculinas</li>
+                    <li><i class="fas fa-tshirt" style="color: #e74c3c;"></i> 2 skins femininas</li>
+                    <li><i class="fas fa-check" style="color: #2ecc71;"></i> Todos os benefícios do VIP Prata</li>
+                    <li><i class="fas fa-money-bill-wave" style="color: #f39c12;"></i> Salário VIP Ouro: $30,000</li>
+                    <li><i class="fas fa-clock" style="color: #e67e22;"></i> Acesso antecipado a novas atualizações</li>
+                    <li><i class="fas fa-headset" style="color: #8e44ad;"></i> Suporte prioritário</li>
+                    <li><i class="fas fa-car-side" style="color: #3498db;"></i> Personalização exclusiva do veículo</li>
+                </ul>
+                <p class="descricao">O pacote VIP Ouro oferece benefícios premium e acesso antecipado a novidades e suporte dedicado.</p>
+            </div>
+        </article>
+        <article class="produto-item">
+            <div class="produto-imagem">
+                <img src="https://storage.hydrus.gg/production/packages/wblqjyLbmyoTg8QMA55deF7sLttiSTz9AIObQqqY203Q5Xw1y9fkmMnmpmoQeZmM.png" alt="VIP Diamante">
+            </div>
+            <div class="produto-info">
+                <h2><i class="fas fa-gem" style="color: #00d9ff;"></i> VIP Diamante</h2>
+                <p class="preco">R$ 60</p>
+                <ul class="beneficios">
+                    <li><i class="fas fa-car" style="color: #3498db;"></i> 2 carros exclusivos</li>
+                    <li><i class="fas fa-tshirt" style="color: #e74c3c;"></i> 2 skins masculinas</li>
+                    <li><i class="fas fa-tshirt" style="color: #e74c3c;"></i> 2 skins femininas</li>
+                    <li><i class="fas fa-check" style="color: #2ecc71;"></i> Todos os benefícios do VIP Ouro</li>
+                    <li><i class="fas fa-money-bill-wave" style="color: #f39c12;"></i> Salário VIP Diamante: $40,000</li>
+                    <li><i class="fas fa-star" style="color: #f1c40f;"></i> Acesso a conteúdos exclusivos</li>
+                    <li><i class="fas fa-headset" style="color: #8e44ad;"></i> Suporte VIP 24/7</li>
+                    <li><i class="fas fa-car-side" style="color: #3498db;"></i> Customização ilimitada de veículos</li>
+                </ul>
+                <p class="descricao">O pacote VIP Diamante oferece o máximo em benefícios e personalização para uma experiência premium na After City.</p>
+            </div>
+        </article>
+    </div>
+    <div class="info-pagamento">
+        <h3><i class="fas fa-credit-card" style="color: #2ecc71;"></i> Como Realizar o Pagamento</h3>
+        <p><i class="fas fa-ticket-alt" style="color: #e67e22;"></i> Para efetuar a compra, utilize um ticket do Discord. No nosso servidor oficial, você encontrará todas as instruções necessárias para completar seu pagamento com sucesso.</p>
+        <p><i class="fas fa-info-circle" style="color: #3498db;"></i> Se tiver qualquer dúvida ou precisar de assistência, não hesite em entrar em contato com nossa equipe de suporte <a href="https://discord.gg/tVdsbRUdva" target="_blank">aqui</a>.</p>
+    </div>
+</section>
+
+
+    <!-- Seção de VIP e Tutorial -->
+    <section class="vip-tutorial-section">
+        <div class="container">
+            <h2 class="section-title-2">
+                <i class="fas fa-ticket-alt" style="color: #f39c12;"></i> 
+                <span style="color: #3498db;">Como Abrir um Ticket no Discord</span> 
+                <i class="fas fa-comments" style="color: #3498db;"></i>
+                <i class="fas fa-headset" style="color: #2ecc71;"></i>
+            </h2>
+            <div class="video-container">
+                <video controls>
+                    <source src="nui/videos/tutorial-ticket.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
+            <p class="video-description">
+                <i class="fas fa-video" style="color: #ff5733;"></i> Neste vídeo, você aprenderá como abrir um ticket no Discord da nossa cidade. 
+                Siga as instruções para obter suporte da nossa equipe de forma rápida e fácil. 
+                <i class="fas fa-comments" style="color: #3498db;"></i> 
+                <i class="fas fa-ticket-alt" style="color: #f39c12;"></i>
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção de Atualizações Modernas com Banners Laterais -->
+<section id="atualizacoes-modernas" class="atualizacoes-modernas">
+    <!-- Banner para Nova HUD -->
+    <div class="atualizacao-item">
+        <div class="banner-lateral" style="background-image: url('nui/images/thumb1.jpg');">
+            <h3 class="banner-titulo">Nova HUD</h3>
+        </div>
+        <div class="conteudo-atualizacao">
+            <h2 class="atualizacao-titulo"><i class="fas fa-gamepad" style="color: #2ecc71;"></i> HUD Totalmente Reformulada</h2>
+            <p>Desenvolvemos uma nova HUD minimalista e funcional, com um design clean e informações importantes em destaque. A nova HUD traz uma experiência imersiva e otimizada para os jogadores.</p>
+        </div>
+    </div>
+
+    <!-- Banner para Novo Painel de Login -->
+    <div class="atualizacao-item">
+        <div class="banner-lateral" style="background-image: url('nui/images/thumb2.jfif');">
+            <h3 class="banner-titulo">Novo Painel de Login</h3>
+        </div>
+        <div class="conteudo-atualizacao">
+            <h2 class="atualizacao-titulo"><i class="fas fa-sign-in-alt" style="color: #3498db;"></i> Painel de Login Moderno</h2>
+            <p>Agora o painel de login está mais interativo e moderno, com animações suaves, suporte a múltiplos idiomas e design responsivo. Facilita o acesso dos jogadores e proporciona uma experiência rápida e eficaz.</p>
+        </div>
+    </div>
+
+    <!-- Banner para Concessão -->
+    <div class="atualizacao-item">
+        <div class="banner-lateral" style="background-image: url('nui/images/thumb3.jpg');">
+            <h3 class="banner-titulo">Sistema de Concessão</h3>
+        </div>
+        <div class="conteudo-atualizacao">
+            <h2 class="atualizacao-titulo"><i class="fas fa-car" style="color: #e74c3c;"></i> Sistema de Conce Avançado</h2>
+            <p>Atualizamos o sistema de concessão, agora oferecendo mais opções de veículos, personalizações avançadas e um sistema de compras mais intuitivo. Escolha e personalize seu veículo de forma rápida e prática.</p>
+        </div>
+    </div>
+
+    <!-- Banner para Website Atualizado -->
+    <div class="atualizacao-item">
+        <div class="banner-lateral" style="background-image: url('nui/images/thumb4.jpg');">
+            <h3 class="banner-titulo">Website Atualizado</h3>
+        </div>
+        <div class="conteudo-atualizacao">
+            <h2 class="atualizacao-titulo"><i class="fas fa-globe" style="color: #9b59b6;"></i> Novo Website Integrado</h2>
+            <p>O site oficial foi atualizado, com novas funcionalidades, como sistema de tickets, ranking dos melhores jogadores e loja virtual integrada. Toda a interface foi renovada, proporcionando uma navegação fluida e moderna.</p>
+        </div>
+    </div>
+
+    <!-- Banner para Melhorias de Performance -->
+    <div class="atualizacao-item">
+        <div class="banner-lateral" style="background-image: url('nui/images/wallpaper-1.jpg');">
+            <h3 class="banner-titulo">Melhorias de Performance</h3>
+        </div>
+        <div class="conteudo-atualizacao">
+            <h2 class="atualizacao-titulo"><i class="fas fa-rocket" style="color: #f39c12;"></i> Melhorias de Performance</h2>
+            <p>Reduzimos o tempo de carregamento do servidor e otimizamos a cidade para rodar mais suavemente, mesmo em hardwares menos potentes. Aproveite um gameplay mais fluido e responsivo.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Estilos e Animações -->
+<style>
+    /* Estilo Moderno da Seção de Atualizações */
+    .atualizacoes-modernas {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .atualizacao-item {
+        display: flex;
+        align-items: center;
+        background: #f1f1f1;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .atualizacao-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .banner-lateral {
+        width: 30%;
+        background-size: cover;
+        background-position: center;
+        padding: 50px;
+        position: relative;
+        color: #fff;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .banner-titulo {
+        font-size: 24px;
+        font-weight: bold;
+        background: rgba(0, 0, 0, 0.5);
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+
+    .conteudo-atualizacao {
+        width: 70%;
+        padding: 30px;
+    }
+
+    .atualizacao-titulo {
+        font-size: 28px;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .conteudo-atualizacao p {
+        font-size: 18px;
+        line-height: 1.6;
+        color: #555;
+    }
+</style>
+
+
+<!-- FAQ Section -->
+<section id="faq" class="section">
+    <h2 class="section-title">FAQ (Perguntas Frequentes)</h2>
+    <div class="faq-container">
+        <div class="faq-category" data-target="general">
+            <i class="fas fa-info-circle" style="color: #3498db;"></i> Geral
+        </div>
+        <div class="faq-category" data-target="vip">
+            <i class="fas fa-crown" style="color: #f39c12;"></i> VIP
+        </div>
+        <div class="faq-category" data-target="support">
+            <i class="fas fa-headset" style="color: #2ecc71;"></i> Suporte
+        </div>
+        <div class="faq-content">
+            <div id="general" class="faq-content-section">
+                <h3 style="color: #3498db;">Sobre a Cidade</h3>
+                <p><strong>Como posso começar?</strong> Você pode começar conectando-se ao servidor da cidade usando o IP <strong>0.0.0.00000</strong>. Após entrar, você deve criar uma conta e fazer login. Em seguida, aparecerá na sua tela um painel de autenticação do Discord com um código. Verifique este código no nosso bot do Discord. Após a verificação, você será liberado automaticamente. No painel, basta clicar no botão para verificar se o seu código foi processado no Discord e começar sua história na cidade.</p>
+                <p><strong>Quais são as regras básicas?</strong> As regras básicas incluem respeito aos outros jogadores, não usar cheats e seguir as leis da cidade.</p>
+            </div>
+            <div id="vip" class="faq-content-section">
+                <h3 style="color: #f39c12;">Benefícios VIP</h3>
+                <p><strong>O que é um VIP?</strong> Um VIP é um jogador que tem acesso a recursos exclusivos e benefícios adicionais no jogo.</p>
+                <p><strong>Como posso me tornar um VIP?</strong> Você pode se tornar um VIP adquirindo um pacote VIP através do nosso sistema de tickets. Os fundadores irão atendê-lo, perguntarão qual pacote VIP você deseja, informarão o valor e os benefícios que vêm com o pacote.</p>
+            </div>
+            <div id="support" class="faq-content-section">
+                <h3 style="color: #2ecc71;">Suporte</h3>
+                <p><strong>Como posso obter ajuda?</strong> Você pode obter ajuda entrando em contato com o suporte através do nosso canal de suporte. Você pode escolher a melhor forma para você:</p>
+                <ul>
+                    <li>Criar um ticket de suporte.</li>
+                    <li>Participar de uma chamada de suporte.</li>
+                </ul>
+                <p>Escolha a opção que melhor atende às suas necessidades e entre em contato com nossa equipe!</p>             
+                <p><strong>Onde posso relatar um problema?</strong> Problemas podem ser relatados através do nosso sistema de tickets no <a href="https://discord.gg/tVdsbRUdva" target="_blank">Discord</a>.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Seção de Eventos -->
+    <section id="eventos" class="info-section">
+        <h2 class="section-title"><i class="fas fa-calendar-alt"></i> Eventos Futuros</h2>
+        <div class="info-content">
+            <!-- Calendário de Eventos -->
+            <div class="calendar-container">
+                <div id="calendar"></div>
+            </div>
+            <!-- Lista de Eventos -->
+            <div class="events-list">
+                <h3>Próximos Eventos</h3>
+                <ul id="eventos-list">
+                    <!-- Eventos Dinâmicos Serão Adicionados Aqui -->
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Inclua os arquivos CSS e JS do FullCalendar -->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js'></script>
+    
     <script>
-        function updateCountdown() {
-            const launchDate = new Date("September 16, 2024 19:00:00").getTime();
-            const now = new Date().getTime();
-            const distance = launchDate - now;
-            
-            if (distance < 0) {
-                document.getElementById('countdown').innerHTML = "O site foi lançado!";
-                clearInterval(countdownInterval);
-                return;
-            }
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: [
+                    {
+                        title: 'Corrida Noturna',
+                        start: '2024-10-10T20:00:00',
+                        description: 'Participe da nossa corrida noturna e ganhe prêmios incríveis.',
+                    },
+                    {
+                        title: 'Feira de Negócios',
+                        start: '2024-10-15T10:00:00',
+                        description: 'Venha conhecer novos empreendedores e oportunidades de negócios.',
+                    },
+                    {
+                        title: 'Feira de Negócios',
+                        start: '2024-10-20T10:00:00',
+                        description: 'Venha conhecer novos empreendedores e oportunidades de negócios.',
+                    }
+                    // Adicione mais eventos conforme necessário
+                ],
+                eventColor: '#007bff',
+            });
+            calendar.render();
+    
+            // Atualiza a lista de eventos e contagem regressiva
+            const eventos = [
+                {
+                    title: 'Corrida Noturna',
+                    date: '2024-10-10T20:00:00',
+                    description: 'Participe da nossa corrida noturna e ganhe prêmios incríveis.',
+                },
+                {
+                    title: 'Feira de Negócios',
+                    date: '2024-10-15T10:00:00',
+                    description: 'Venha conhecer novos empreendedores e oportunidades de negócios.',
+                },
+                {
+                    title: 'Feira de Negócios',
+                    date: '2024-10-20T10:00:00',
+                    description: 'Venha conhecer novos empreendedores e oportunidades de negócios.',
+                }
+                // Adicione mais eventos conforme necessário
+            ];
+    
+            const eventosList = document.getElementById('eventos-list');
+            eventos.forEach(evento => {
+                const eventDate = new Date(evento.date);
+                const now = new Date();
+                const timeDiff = eventDate - now;
+                const daysLeft = Math.ceil(timeDiff / (1000 * 60 * 60 * 24));
+    
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <div class="event-date"><i class="fas fa-calendar-day"></i> ${eventDate.toLocaleDateString()}</div>
+                    <div class="event-details">
+                        <h4>${evento.title}</h4>
+                        <p>${evento.description}</p>
+                        <span class="countdown">Faltam ${daysLeft} dias</span>
+                    </div>
+                `;
+                eventosList.appendChild(listItem);
+            });
+        });
+    </script>
 
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-            document.getElementById('days').innerText = days.toString().padStart(2, '0');
-            document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
-            document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
-            document.getElementById('seconds').innerText = seconds.toString().padStart(2, '0');
+
+<h1>🤝 Nossas Parcerias 🤝</h1>
+
+<div class="partnerships-container">
+    <div class="partnership-card">
+        <div class="partnership-logo">
+            <img src="nui/parcerias/py.png" alt="Logo Loja Parceira">
+        </div>
+        <div class="partnership-content">
+            <h2 class="partnership-title">Pyper Codes</h2>
+            <p class="partnership-description">A equipe do After City tem o prazer de anunciar sua nova parceria com a Pyper Codes, uma loja inovadora especializada em scripts personalizados para MTA (Multi Theft Auto). Essa parceria trará novas possibilidades ao servidor, elevando a jogabilidade e proporcionando experiências incríveis para toda a comunidade.</p>
+            <a href="#" class="partnership-btn">Clique Aqui</a>
+            <div class="social-icons">
+                <!-- Discord Icon -->
+                <a href="https://discord.com/invite/d2wFnWPwvY" target="_blank" class="discord" id="discord-servidor3"><i class="fab fa-discord"></i></a>
+                <a href=https://pypercodes.lockcode.com.br/" target="_blank" class="website" id="website-servidor3"><i class="fas fa-globe"></i></a>
+                <!-- YouTube Icon -->
+                <a href="https://www.youtube.com/@PyperCodes" target="_blank" class="youtube" id="youtube-servidor3"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="partnership-card">
+        <div class="partnership-logo">
+            <img src="nui/parcerias/enx.png" alt="Logo Comunidade Parceira">
+        </div>
+        <div class="partnership-content">
+            <h2 class="partnership-title">Enx Community</h2>
+            <p class="partnership-description">Estamos orgulhosos de nossa parceria com a Enx Community, uma plataforma vibrante que conecta jogadores e promove eventos emocionantes. Juntos, estamos criando oportunidades incríveis para interações e diversão dentro e fora do jogo. Descubra novas amizades e participe de eventos exclusivos com a Enx Community!</p>        
+            <a href="#" class="partnership-btn">Clique Aqui</a>    
+            <div class="social-icons">
+                <!-- Discord Icon -->
+                <a href="https://discord.gg/aYwKZH4c5x" target="_blank" class="discord" id="discord-comunidade2"><i class="fab fa-discord"></i></a>
+                <!-- YouTube Icon -->
+                <a href="https://www.youtube.com/@enxyt_" target="_blank" class="youtube" id="youtube-comunidade2"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Variáveis booleanas para ativar/desativar links sociais
+    const socialLinks = {
+        loja1: {
+            discord: true,
+            website: false,
+            youtube: true
+        },
+        comunidade2: {
+            discord: true,
+            website: true,
+            youtube: false
+        },
+        servidor3: {
+            discord: true,
+            website: true,
+            youtube: true
+        }
+    };
+
+    // Função para ativar ou desativar ícones sociais
+    function toggleSocialLinks(id, social) {
+        const discordEl = document.getElementById(`discord-${id}`);
+        const websiteEl = document.getElementById(`website-${id}`);
+        const youtubeEl = document.getElementById(`youtube-${id}`);
+
+        if (!social.discord) discordEl.style.display = 'none';
+        if (!social.website) websiteEl.style.display = 'none';
+        if (!social.youtube) youtubeEl.style.display = 'none';
+    }
+
+    // Aplicar a função para todas as parcerias
+    toggleSocialLinks('loja1', socialLinks.loja1);
+    toggleSocialLinks('comunidade2', socialLinks.comunidade2);
+    toggleSocialLinks('servidor3', socialLinks.servidor3);
+</script>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Arial', sans-serif;
+    }
+
+    body {
+        background-color: #f4f4f9;
+        color: #333;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 50px;
+        color: #2c3e50;
+    }
+
+    .partnerships-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .partnership-card {
+        background-color: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .partnership-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .partnership-logo {
+        background-color: #1abc9c;
+        padding: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .partnership-logo img {
+        max-width: 100%;
+        max-height: 120px;
+        object-fit: contain;
+    }
+
+    .partnership-content {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .partnership-title {
+        font-size: 1.8rem;
+        color: #2c3e50;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .partnership-description {
+        font-size: 1rem;
+        color: #7f8c8d;
+        margin-bottom: 25px;
+        line-height: 1.6;
+    }
+
+    .partnership-btn {
+        background-color: #2980b9;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        display: inline-block;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .partnership-btn:hover {
+        background-color: #3498db;
+        transform: translateY(-3px);
+    }
+
+    .social-icons {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .social-icons a {
+        font-size: 1.5rem;
+        color: #333;
+        transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+        color: #3498db;
+    }
+
+    @media (max-width: 768px) {
+        .partnership-content {
+            padding: 20px;
         }
 
-        const countdownInterval = setInterval(updateCountdown, 1000);
-        updateCountdown();
+        .partnership-btn {
+            padding: 10px 20px;
+        }
+    }
+</style>
+
+     <!-- Seção de Direitos e Desenvolvedores -->
+<section id="direitos-desenvolvedores" class="section">
+    <div class="conteudo-direitos">
+        <p>&copy; 2024 After City. Todos os direitos reservados. <i class="fas fa-copyright" style="color: #3498db;"></i></p>
+    </div>
+    <div class="avatares-desenvolvedores">
+        <h3 style="color: #e67e22;"><i class="fas fa-users"></i> Desenvolvedores:</h3>
+        <div class="avatar">
+            <img src="https://cdn.discordapp.com/avatars/1185280313430114326/a_0b72d5d271e869fc31eb645aa036c80a.gif?size=2048" alt="Desenvolvedor 1">
+            <p><i class="fas fa-user" style="color: #2ecc71;"></i> Dev Gago4k</p>
+        </div>
+        <div class="avatar">
+            <img src="https://cdn.discordapp.com/avatars/980296384035045376/ecf8a6632ac73ebae5cdfd2cd5080524.webp?size=2048" alt="Desenvolvedor 2">
+            <p><i class="fas fa-user" style="color: #2ecc71;"></i> Dev Bhenois</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Botão de Versão -->
+<button id="version-button" class="version-button">
+    <i class="fas fa-exclamation-circle" style="color: #ffffff;"></i> Versão
+</button>
+
+<!-- Popup de Versão -->
+<div id="version-popup" class="version-popup">
+    <div class="version-popup-content">
+        <span class="close-button" id="close-version-popup" style="color: #e74c3c;">&times;</span>
+        <h3 style="color: #3498db;"><i class="fas fa-cogs"></i> Versão do Site</h3>
+        <p><i class="fas fa-rocket" style="color: #2ecc71;"></i> Versão 1.0 (Oficial)</p>
+        <p><i class="fas fa-calendar-alt" style="color: #f39c12;"></i> Este é um site em fase beta. Estamos trabalhando continuamente para melhorar a experiência. Fique atento para mais atualizações!</p>
+    </div>
+</div>
+
+
+<!-- Áudios -->
+<audio id="open-sound" src="nui/audio/infobleep-87963.mp3" preload="auto"></audio>
+<audio id="close-sound" src="nui/audio/error-5-199276.mp3" preload="auto"></audio>
+
+<script>
+    // Elementos do DOM
+    const versionButton = document.getElementById('version-button');
+    const versionPopup = document.getElementById('version-popup');
+    const closeVersionPopup = document.getElementById('close-version-popup');
+    const openSound = document.getElementById('open-sound');
+    const closeSound = document.getElementById('close-sound');
+
+    // Mostrar o popup ao clicar no botão
+    versionButton.addEventListener('click', () => {
+        versionPopup.style.display = 'flex';
+        openSound.play(); // Toca o som ao abrir
+    });
+
+    // Fechar o popup ao clicar no botão de fechar
+    closeVersionPopup.addEventListener('click', () => {
+        versionPopup.style.display = 'none';
+        closeSound.play(); // Toca o som ao fechar
+    });
+
+    // Fechar o popup ao clicar fora do conteúdo
+    window.addEventListener('click', (event) => {
+        if (event.target === versionPopup) {
+            versionPopup.style.display = 'none';
+            closeSound.play(); // Toca o som ao fechar
+        }
+    });
+</script>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simulando carregamento
+            setTimeout(function() {
+                document.querySelector('.loader-overlay').style.display = 'none';
+            }, 2000); // 2 segundos de carregamento
+    
+            // Função para verificar a visibilidade da seção
+            function handleScroll() {
+                const sections = document.querySelectorAll('.section');
+                sections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top < window.innerHeight && rect.bottom > 0) {
+                        section.classList.add('visible');
+                    }
+                });
+            }
+    
+            // Adiciona o evento de scroll
+            document.addEventListener('scroll', handleScroll);
+            // Verifica a visibilidade no carregamento inicial
+            handleScroll();
+    
+            // JavaScript para FAQ Section
+            const categories = document.querySelectorAll('.faq-category');
+            const sections = document.querySelectorAll('.faq-content-section');
+    
+            categories.forEach(category => {
+                category.addEventListener('click', () => {
+                    const targetId = category.getAttribute('data-target');
+    
+                    sections.forEach(section => {
+                        if (section.id === targetId) {
+                            section.classList.toggle('show');
+                        } else {
+                            section.classList.remove('show');
+                        }
+                    });
+                });
+            });
+        });
     </script>
 </body>
 </html>
